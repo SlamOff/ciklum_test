@@ -254,11 +254,10 @@ body {
   width: 30%;
   padding: 10px; }
   .sidebar__widget {
-    padding: 0 10px;
     background-color: #000; }
     .sidebar__widget__item {
       border-bottom: 1px solid #515151;
-      padding: 10px 0; }
+      padding: 10px; }
       .sidebar__widget__item:last-of-type {
         border: 0; }
       .sidebar__widget__item p {
