@@ -1,0 +1,55 @@
+$light_gray: #cccccc
+$dark_gray: #515151
+$xs: "(min-width: 319px)"
+$_xs: "(max-width: 350px)"
+$sm: "(min-width: 767px)"
+$_sm: "(max-width: 766px)"
+$md: "(min-width: 1025px)"
+$_md: "(max-width: 1024px)"
+$lg: "(min-width: 1224px)"
+$_lg: "(max-width: 1224px)"
+$_xlg: "(max-width: 1700px)"
+$xlg: "(min-width: 1700px)"
+body
+	min-width: 800px
+	font: 12px "Tahoma", sans-serif
+	font-weight: normal
+	position: relative
+	margin: 0 auto
+	color: #fff
+	input,input:focus,select,select:focus,textarea
+		outline: none
+	a
+		color: inherit
+		outline: none
+		text-decoration: none
+	button
+		border: 0
+		outline: 0
+		cursor: pointer
+$cols: 12
+$col: calc( 100% / #{$cols} )
+=col($num)
+	@media #{$xs}
+		width: calc( #{$col} * #{$num} )
+=offset($offset)
+		margin-left: calc( #{$col} * #{$offset}
+.container
+	margin: 0 auto
+	position: relative
+	width: 90%
+	max-width: 1280px
+	&:after
+		display: table
+		content: ""
+		clear: both
+	// @media #{$xs}
+	// 	width: 100%
+	// 	padding: 0 15px
+	// @media #{$sm}
+	// 	width: 750px
+	// 	padding: 0
+	// @media #{$md}
+	// 	width: 960px
+	// @media #{$lg}
+	// 	width: 1200px

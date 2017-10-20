@@ -1,0 +1,18 @@
+{
+  "name": "ciklum",
+  "description": "test",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/libs"
+  ],
+  "authors": [
+    "Vitaliy <vetalsd2@gmail.com>"
+  ]
+}

@@ -1,0 +1,31 @@
+.sidebar
+	background-color: $dark_gray
+	border: 10px solid #a3a3a3
+	float: left
+	width: 30%
+	padding: 10px
+	&__widget
+		padding: 0 10px
+		background-color: #000
+		&__item
+			border-bottom: 1px solid $dark_gray
+			padding: 10px 0
+			&:last-of-type
+				border: 0
+			p
+				line-height: 18px
+				margin: 20px 0 10px
+				display: none
+			h6
+				position: relative
+				cursor: pointer
+				.arrow
+					position: absolute
+					right: 0
+					top: 7px
+					width: 5px
+					height: 3px
+					background-image: url("../img/arrow_down2.png")
+					transition: transform .1s
+					&.transformed
+						transform: rotate(-90deg)
