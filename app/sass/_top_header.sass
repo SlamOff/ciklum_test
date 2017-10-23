@@ -59,6 +59,7 @@
 				.submenu
 					position: absolute
 					width: 150px
+					z-index: 2
 					background-color: #000
 					left: 0
 					top: 100%
@@ -89,8 +90,19 @@
 			border-radius: 2px
 			opacity: .6
 			transition: all .3s
+			width: 30px
+			height: 22px
+			background-size: 24px 16px
+			background-repeat: no-repeat
+			background-position: center
 			&.active
 				border: 2px solid #2e2e2e
 				opacity: 1
 			&:hover
 				opacity: 1
+			&:first-of-type
+				background-image: url("../img/lang_en.png")
+			&:nth-of-type(2)
+				background-image: url("../img/lang_fr.png")
+			&:last-of-type
+				background-image: url("../img/lang_de.png")

@@ -13,11 +13,17 @@
 				border: 0
 			p
 				line-height: 18px
-				margin: 20px 0 10px
-				display: none
+				height: 0
+				overflow: hidden
+				transition: all .4s
+				&.active
+					height: auto
+					opacity: 1
+					margin: 20px 0 10px
 			h6
 				position: relative
 				cursor: pointer
+				//margin-bottom: 20px
 				.arrow
 					position: absolute
 					right: 0

@@ -17,7 +17,7 @@
 		<!-- header -->
 		<header class="header">
 			<nav class="header__menu">
-				<ul class="menu">
+				<ul id="menu" class="menu">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Sports</a></li>
 					<li><a href="#">Casino</a></li>
@@ -30,7 +30,7 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header__lang">
+			<div id="lang" class="header__lang">
 				<a class="lang active" href="#"><img src="img/lang_en.png" alt=""></a>
 				<a class="lang" href="#"><img src="img/lang_fr.png" alt=""></a>
 				<a class="lang" href="#"><img src="img/lang_de.png" alt=""></a>
@@ -86,17 +86,15 @@
 	</div>
 	
 	
-
-	
-	
-	<!-- build:js scripts/combined.js -->
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/dist/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/dist/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/dest/respond.min.js"></script>
 	<![endif]-->
-	<script src="libs/jquery/dist/jquery.min.js"></script>
+	
+	
+	<!-- build:js scripts/combined.js -->
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
 </body>
